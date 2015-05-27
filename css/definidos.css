@@ -39,3 +39,18 @@ ul li a:visited {
 .nav-tabs.nav-justified>li>a {
 	color: white;
 }
+
+div.footer {
+	width: 1024px;
+	height: 56px;
+	background-image: url(../img/Pie.jpg);
+	text-align: center;
+}
+
+.centrardiv {
+	text-align: center;
+}
+
+p.pie {
+	position: relative;
+}
