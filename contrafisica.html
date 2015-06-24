@@ -82,19 +82,42 @@
 								</div>
 								<div class="form-group col-lg-6">
 									<label> Estado </label>
-									<input type="text" class="form-control" maxlength="30" minlength="7" required/>
-								</div>
-								<div class="form-group col-lg-6">
-									<label> C.P. </label>
-									<input type="text" class="form-control" maxlength="5" minlength="5" required/>
-								</div>
-								<div class="form-group col-lg-6">
-									<label> Teléfono </label>
-									<input type="tel" class="form-control" maxlength="13" minlength="12" placeholder="Introduzca lada + numero" required/>
-								</div>
-								<div class="form-group col-lg-12">
-									<label> Domicilio Pachuca </label>
-									<input type="text" class="form-control" maxlength="50" minlength="20" placeholder="Introduzca calle, numero exterior y colonia" required/>
+									<select class="form-control" name="estado">
+										<option value="Seleccione"> Seleccione el Estado </option>
+										<option value="Aguascalientes"> Aguascalientes </option>
+										<option value="Bajacalifornia"> Baja California </option>
+										<option value="Bajacaliforniasur"> Baja Californa Sur </option>
+										<option value="Campeche"> Campeche </option>
+										<option value="Chiapas"> Chiapas </option>
+										<option value="Chihuahua"> Chihuahua </option>
+										<option value="Coahuila"> Coahuila </option>
+										<option value="Colima"> Colima </option>
+										<option value="Distritofederal"> Distrito Federal </option>
+										<option value="Durango"> Durango </option>
+										<option value="Estadodemexico"> Estado de México </option>
+										<option value="Guanajuato"> Guanajuato </option>
+										<option value="Guerrero"> Guerrero </option>
+										<option value="Hidalgo"> Hidalgo </option>
+										<option value="Jalisco"> Jalisco </option>
+										<option value="Michoacan"> Michoacan </option>
+										<option value="Morelos"> Morelos </option>
+										<option value="Nayarit"> Nayarit </option>
+										<option value="Nuevoleon"> Nuevo León </option>
+										<option value="Oaxaca"> Oaxaca </option>
+										<option value="Puebla"> Puebla </option>
+										<option value="Queretaro"> Queretaro </option>
+										<option value="Quintanaroo"> Quintana Roo </option>
+										<option value="Sanluispotosi"> San Luis Potosi </option>
+										<option value="Sinaloa"> Sinaloa </option>
+										<option value="Sonora"> Sonora </option>
+										<option value="Tabasco"> Tabasco </option>
+										<option value="Tamaulipas"> Tamaulipas </option>
+										<option value="Tlaxcala"> Tlaxcala </option>
+										<option value="Veracruz"> Veracruz </option>
+										<option value="Yucatan"> Yucatán </option>
+										<option value="Zacatecas"> Zacatecas </option>
+									</select>
+									<!--<input type="text" class="form-control" maxlength="30" minlength="7" required/>-->
 								</div>
 								<div class="form-group col-lg-6">
 									<label> Teléfono Pachuca </label>
@@ -111,45 +134,47 @@
 
 
 
-				<!--DATOS LEGALES-->
-				<div class="tab-pane fade" id="tab13">
-					<div class="row">
-						<div class="col-lg-offset-3">
-							<div class="col-lg-8 legal1">
-								<div class="form-group col-lg-12">
-									<label> Lugar de Nacimiento </label>
-									<input type="text" class="form-control" maxlength="30" minlength="7" placeholder="Introduzca el Estado" required/>
-								</div>
-								<div class="form-group col-lg-6">
-									<label> Fecha de Nacimiento </label>
-									<input type="date" class="form-control" placeholder="" required/>
-								</div>
-								<div class="form-group col-lg-6">
-									<label> Estado Civil </label>
-									<input type="text" class="form-control" maxlength="10" minlength="10">
-								</div>
-								<div class="form-group col-lg-6">
-									<label> Patrimonio </label>
-									<input type="text" class="form-control" maxlength="7" minlength="3">
-								</div>
-								<div class="form-group col-lg-6">
-									<label> Capital Contable </label>
-									<input type="" class="form-control" maxlength="7" minlength="3">
-								</div>
-								<div class="form-group col-lg-6">
-									<label>No. INFONAVIT </label>
-									<input type="" class="form-control" maxlength="10" minlength="10">
-								</div>
-								<div class="form-group col-lg-6">
-									<label>No. IMSS</label>
-									<input type="" class="form-control" maxlength="" minlength="">
-								</div>
-								<div class="form-group col-lg-6">
-									<label>Cámara</label>
-									<input type="" class="form-control" </div>
+				<form role="form">
+					<!--DATOS LEGALES-->
+					<div class="tab-pane fade" id="tab13">
+						<div class="row">
+							<div class="col-lg-offset-3">
+								<div class="col-lg-8 legal1">
+									<div class="form-group col-lg-12">
+										<label> Lugar de Nacimiento </label>
+										<input type="text" class="form-control" maxlength="30" minlength="7" placeholder="Introduzca lugar de nacimiento" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label> Fecha de Nacimiento </label>
+										<input type="date" class="form-control" placeholder="dd/mm/aa" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label> Estado Civil </label>
+										<input type="text" class="form-control" maxlength="10" minlength="10" placeholder="" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label> Patrimonio </label>
+										<input type="number" class="form-control" maxlength="7" minlength="3" placeholder="" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label> Capital Contable </label>
+										<input type="number" class="form-control" maxlength="7" minlength="3" placeholder="" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label>No. INFONAVIT </label>
+										<input type="text" class="form-control" maxlength="10" minlength="10" placeholder="" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label>No. IMSS</label>
+										<input type="text" class="form-control" maxlength="10" minlength="10" placeholder="" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label>Cámara</label>
+										<input type="text" class="form-control" maxlength="30" minlength="10" placeholder="" required/>
+									</div>
 									<div class="form-group col-lg-6">
 										<label>No. Registro de Cámara </label>
-										<input type="" class="form-control">
+										<input type="text" class="form-control" maxlength="10" minlength="10" placeholder="" required/>
 									</div>
 								</div>
 							</div>
@@ -157,142 +182,154 @@
 					</div>
 
 
+					<form role="form">
+						<!--OBRAS Y SERVICIOS-->
 
-					<!--OBRAS Y SERVICIOS-->
-
-					<div class="tab-pane fade" id="tab14">
-						<div class="row">
-							<div class="col-lg-offset-3">
-								<div class="col-lg-8 obras">
-									<h4><strong>De las Obras y Servicios</strong></h4>
-									<p> Obras realizadas en los últimos 3 (tres) años: </p>
-									<textarea class="form-control" rows="5"></textarea>
-									<p> Especialidades que solicita le sean autorizadas: </p>
-									<textarea class="form-control " rows="5 ">
-									</textarea>
-									<p> Relación del Equipo Propiedad del contratista: </p>
-									<textarea class="form-control " rows="4 ">
-									</textarea>
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<!--DATOS DEL PERSONAL TÉCNICO -->
-					<div class="tab-pane fade" id="tab15">
-						<div class="row">
-							<div class="col-lg-offset-3">
-								<div class="col-lg-8 tecnicos">
-									<div class="form-group col-lg-12">
-										<label> Nombre Personal Técnico (1) - - - - - - - - - - - - - - - - - - - - - - </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-12">
-										<label> Profesión </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-6">
-										<label> No. Cedula Profesional </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-6">
-										<label> R.F.C. </label>
-										<input type="" class="form-control" maxlength="" minlength="" placeholder="RULA-760605-M65">
-									</div>
-									<div class="form-group col-lg-12">
-										<label> Nombre Personal Técnico (2) - - - - - - - - - - - - - - - - - - - - - - </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-12">
-										<label> Profesión </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-6">
-										<label> No. Cedula Profesional </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-6">
-										<label> R.F.C. </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-12">
-										<label> Nombre Personal Técnico (3) - - - - - - - - - - - - - - - - - - - - - - </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-12">
-										<label> Profesión </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-6">
-										<label> No. Cedula Profesional </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-6">
-										<label> R.F.C. </label>
-										<input type="" class="form-control" maxlength="" minlength="">
+						<div class="tab-pane fade" id="tab14">
+							<div class="row">
+								<div class="col-lg-offset-3">
+									<div class="col-lg-8 obras">
+										<h4><strong>De las Obras y Servicios</strong></h4>
+										<div class="form-group">
+											<label>Obras realizadas en los últimos 3 (tres) años:</label>
+											<textarea class="form-control" id="Obras" rows="5" cols="80" placeholder="Introduza las obras realizadas" required/></textarea>
+										</div>
+										<div class="form-group">
+											<label>Especialidades que solicita le sean autorizadas: </label>
+											<textarea class="form-control" id="Obras" rows="5" cols="80" placeholder="Introduzca sus Especialidades" required/></textarea>
+										</div>
+										<div class="form-group">
+											<label>Relación del Equipo Propiedad del contratista: </label>
+											<textarea class="form-control" ide="Obras" rows="5" cols="80" placeholder="Detalle el Equipo" required/></textarea>
+										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-					</div>
-					<!--DATOS SOCIOS / ACCIONISTAS / BIENES / OBSERVACIONES-->
-					<div class="tab-pane fade" id="tab16">
-						<div class="row">
-							<div class="col-lg-offset-3">
-								<div class="col-lg-8 socios">
-									<div class="form-group col-lg-8">
-										<label> Nombre Socio (1) </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-4">
-										<label> R.F.C. </label>
-										<input type="" class="form-control" maxlength="" minlength="" placeholder="RULA-760605-M65">
-									</div>
-									<div class="form-group col-lg-8">
-										<label> Nombre Socio (2) </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-4">
-										<label> R.F.C. </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-8">
-										<label> Nombre Socio (3) </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-4">
-										<label> R.F.C. </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-8">
-										<label> Nombre Socio (4) </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-4">
-										<label>R.F.C.</label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
-									<div class="form-group col-lg-8">
-										<label> Nombre Socio (5) </label>
-										<input type="" class="form-control" maxlength="" minlength="">
-									</div>
 
-									<div class="form-group col-lg-4">
-										<label>R.F.C.</label>
-										<input type="" class="form-control" maxlength="" minlength="">
+						<form role="form">
+							<!--DATOS DEL PERSONAL TÉCNICO -->
+							<div class="tab-pane fade" id="tab15">
+								<div class="row">
+									<div class="col-lg-offset-3">
+										<div class="col-lg-8 tecnicos">
+											<div class="form-group col-lg-12">
+												<label> Nombre Personal Técnico (1) - - - - - - - - - - - - - - - - - - - - - - </label>
+												<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>
+											</div>
+											<div class="form-group col-lg-12">
+												<label> Profesión </label>
+												<input type="text" class="form-control" maxlength="20" minlength="10" required/>
+											</div>
+											<div class="form-group col-lg-6">
+												<label> No. Cedula Profesional </label>
+												<input type="text" class="form-control" maxlength="10" minlength="10" required/>
+											</div>
+											<div class="form-group col-lg-6">
+												<label> R.F.C. </label>
+												<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="" required/>
+											</div>
+											<div class="form-group col-lg-12">
+												<label> Nombre Personal Técnico (2) - - - - - - - - - - - - - - - - - - - - - - </label>
+												<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>
+											</div>
+											<div class="form-group col-lg-12">
+												<label> Profesión </label>
+												<input type="text" class="form-control" maxlength="20" minlength="10" required/>
+											</div>
+											<div class="form-group col-lg-6">
+												<label> No. Cedula Profesional </label>
+												<input type="text" class="form-control" maxlength="10" minlength="10" required/>
+											</div>
+											<div class="form-group col-lg-6">
+												<label> R.F.C. </label>
+												<input type="text" class="form-control" maxlength="13" minlength="13" required/>
+											</div>
+											<div class="form-group col-lg-12">
+												<label> Nombre Personal Técnico (3) - - - - - - - - - - - - - - - - - - - - - - </label>
+												<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>
+											</div>
+											<div class="form-group col-lg-12">
+												<label> Profesión </label>
+												<input type="text" class="form-control" maxlength="20" minlength="10" required/>
+											</div>
+											<div class="form-group col-lg-6">
+												<label> No. Cedula Profesional </label>
+												<input type="text" class="form-control" maxlength="10" minlength="10" required/>
+											</div>
+											<div class="form-group col-lg-6">
+												<label> R.F.C. </label>
+												<input type="text" class="form-control" maxlength="13" minlength="13" required/>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
-					</div>
-					<button type="submit" class="btn btn-ttc center-block"> Guardar datos </button>
-				</div <p class="pie"></p>
-				<div class="centrardiv"><img src="img/Pie.jpg" alt="" />
-				</div>
-				<script src="js/jquery-2.1.4.min.js"></script>
-				<script src="js/bootstrap.min.js"></script>
-			</div>
+
+							<form role="form">
+								<!--DATOS SOCIOS / ACCIONISTAS / BIENES / OBSERVACIONES-->
+								<div class="tab-pane fade" id="tab16">
+									<div class="row">
+										<div class="col-lg-offset-3">
+											<div class="col-lg-8 socios">
+												<div class="form-group col-lg-8">
+													<label> Nombre Socio (1) </label>
+													<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>
+												</div>
+												<div class="form-group col-lg-4">
+													<label> R.F.C. </label>
+													<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Introduzca 13 digitos" required/>
+												</div>
+												<div class="form-group col-lg-8">
+													<label> Nombre Socio (2) </label>
+													<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>
+												</div>
+												<div class="form-group col-lg-4">
+													<label> R.F.C. </label>
+													<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Introduzca 13 digitos" required/>
+												</div>
+												<div class="form-group col-lg-8">
+													<label> Nombre Socio (3) </label>
+													<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>
+												</div>
+												<div class="form-group col-lg-4">
+													<label> R.F.C. </label>
+													<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Introduzca 13 digitos" required/>
+												</div>
+												<div class="form-group col-lg-8">
+													<label> Nombre Socio (4) </label>
+													<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>
+												</div>
+												<div class="form-group col-lg-4">
+													<label>R.F.C.</label>
+													<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Introduzca 13 digitos" required/>
+												</div>
+												<div class="form-group col-lg-8">
+													<label> Nombre Socio (5) </label>
+													<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>
+												</div>
+												<div class="form-group col-lg-4">
+													<label>R.F.C.</label>
+													<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Introuzca 13 digitos" required/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<button type="submit" class="btn btn-ttc center-block"> Guardar datos </button>
+								<p class="pie "></p>
+								<div class="centrardiv"><img src="img/Pie.jpg" alt="" />
+								</div>
+
+								<script src="js/jquery-2.1.4.min.js "></script>
+								<script src="js/bootstrap.min.js "></script>
+							</form>
+						</form>
+					</form>
+				</form>
 		</form>
+		</div>
 </body>
 
 </html>
