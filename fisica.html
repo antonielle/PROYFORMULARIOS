@@ -10,11 +10,12 @@
 	<script src="https://maxcdn.bootsrapcdn.com/bootsrap/3.3.4/js/bootstrap.min.js"></script>-->
 
 	<link href="css/bootstrap.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen ">
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/definidos.css" rel="stylesheet">
 	<link href="css/definidosgris.css" rel="stylesheet">
 	<link href="css/definidosverde.css" rel="stylesheet">
+	<link href="css/miboton.css" rel="stylesheet">
 	<script src="css/js/bootstrap.min.js"></script>
 
 </head>
@@ -37,7 +38,7 @@
 	</div>
 
 	<!--Nota: Los campos necesarios estan marcados con * -->
-	<div class="container ">
+	<div class="container">
 
 		<ul class="nav nav-tabs nav-justified">
 			<li class="active"><a href="#tab1" data-toggle="tab" class="navbar-custom1"> Generales </a>
@@ -48,146 +49,192 @@
 			</li>
 		</ul>
 
-		<!--DATOS GENERALES-->
-		<div class="tab-content">
-			<div class="tab-pane fade active in" id="tab1">
-				<div class="row">
-					<div class="col-lg-offset-3">
-						<div class="col-lg-8 general">
-							<div class="form-group col-lg-12">
-								<label>Persona Física </label>
-								<input type="" name="" class="form-control" id="" value="" placeholder="Nombre y apellidos">
-							</div>
-							<div class="form-group col-lg-6">
-								<label>R.F.C. </label>
-								<input type="" name="" class="form-control" id="" value="" placeholder="RULA-760605-M65">
-							</div>
-							<div class="form-group col-lg-6">
-								<label>E-mail </label>
-								<input type="email" name="" class="form-control" id="" value="" placeholder="antonieta@hidalgo.gob.mx">
-							</div>
-							<div class="form-group col-lg-12">
-								<label>Domicilio Fiscal</label>
-								<input type="" name="" class="form-control" id="" value="">
-							</div>
-							<div class="form-group col-lg-6">
-								<label>Ciudad</label>
-								<input type="" name="" class="form-control" id="" value="">
-							</div>
-							<div class="form-group col-lg-6">
-								<label> Estado </label>
-								<input type="" name="" class="form-control" id="" value="">
-							</div>
-							<div class="form-group col-lg-6">
-								<label> C.P. </label>
-								<input type="" name="" class="form-control" id="" value="">
-							</div>
-							<div class="form-group col-lg-6">
-								<label> Teléfono </label>
-								<input type="" name="" class="form-control" id="" value="" placeholder="(999)999-99-99">
-							</div>
-							<div class="form-group col-lg-12">
-								<label> Domicilio Pachuca </label>
-								<input type="" name="" class="form-control" id="" value="">
-							</div>
-							<div class="form-group col-lg-6">
-								<label> Teléfono Pachuca </label>
-								<input type="" name="" class="form-control" id="" value="" placeholder="(999)999-99-99">
-							</div>
-							<div class="form-group col-lg-6">
-								<label> Fax </label>
-								<input type="" name="" class="form-control" id="" value="" placeholder="(999)999-99-99">
+		<form role="form">
+
+			<!--DATOS GENERALES-->
+			<div class="tab-content">
+				<div class="tab-pane fade active in" id="tab1">
+					<div class="row">
+						<div class="col-lg-offset-3">
+							<div class="col-lg-8 general">
+								<div class="form-group col-lg-12">
+									<label> Persona Física </label>
+									<!--<input name="Personafisica" title="" class="form-control input-sm popover-help" id="Personafisica" aria-describedby="popover370417" size="50" maxlength="200" value="" data-original-title="" data-toggle="popover" data-placement="right" data-content="Indique el nombre y apellidos">-->
+									<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>
+								</div>
+								<div class="form-group col-lg-6">
+									<label> R.F.C. </label>
+									<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Introduzca 13 digitos" required/>
+								</div>
+								<div class="form-group col-lg-6">
+									<label>E-mail </label>
+									<input type="email" class="form-control" maxlength="40" minlength="20" placeholder="alguien@ejemplo.com" required/>
+								</div>
+								<div class="form-group col-lg-12">
+									<label>Domicilio Fiscal</label>
+									<input type="text" class="form-control" maxlength="50" minlength="20" required/>
+								</div>
+								<div class="form-group col-lg-6">
+									<label>Ciudad</label>
+									<input type="text" class="form-control" maxlength="30" minlength="7" required/>
+								</div>
+								<div class="form-group col-lg-6">
+									<label> Estado </label>
+									<select class="form-control" name="estado">
+										<option value="Seleccione"> Seleccione el Estado </option>
+										<option value="Aguascalientes"> Aguascalientes </option>
+										<option value="Bajacalifornia"> Baja California </option>
+										<option value="Bajacaliforniasur"> Baja Californa Sur </option>
+										<option value="Campeche"> Campeche </option>
+										<option value="Chiapas"> Chiapas </option>
+										<option value="Chihuahua"> Chihuahua </option>
+										<option value="Coahuila"> Coahuila </option>
+										<option value="Colima"> Colima </option>
+										<option value="Distritofederal"> Distrito Federal </option>
+										<option value="Durango"> Durango </option>
+										<option value="Estadodemexico"> Estado de México </option>
+										<option value="Guanajuato"> Guanajuato </option>
+										<option value="Guerrero"> Guerrero </option>
+										<option value="Hidalgo"> Hidalgo </option>
+										<option value="Jalisco"> Jalisco </option>
+										<option value="Michoacan"> Michoacan </option>
+										<option value="Morelos"> Morelos </option>
+										<option value="Nayarit"> Nayarit </option>
+										<option value="Nuevoleon"> Nuevo León </option>
+										<option value="Oaxaca"> Oaxaca </option>
+										<option value="Puebla"> Puebla </option>
+										<option value="Queretaro"> Queretaro </option>
+										<option value="Quintanaroo"> Quintana Roo </option>
+										<option value="Sanluispotosi"> San Luis Potosi </option>
+										<option value="Sinaloa"> Sinaloa </option>
+										<option value="Sonora"> Sonora </option>
+										<option value="Tabasco"> Tabasco </option>
+										<option value="Tamaulipas"> Tamaulipas </option>
+										<option value="Tlaxcala"> Tlaxcala </option>
+										<option value="Veracruz"> Veracruz </option>
+										<option value="Yucatan"> Yucatán </option>
+										<option value="Zacatecas"> Zacatecas </option>
+									</select>
+									<!--<input type="" name=" " class="form-control " maxlength="40 " minlength="20 " required/>-->
+								</div>
+								<div class="form-group col-lg-6">
+									<label> C.P. </label>
+									<input type="number" class="form-control" maxlength="5" minlength="5" required/>
+								</div>
+								<div class="form-group col-lg-6">
+									<label> Teléfono </label>
+									<input type="tel" class="form-control" maxlength="13" minlength="0" placeholder="Introduzca lada + numero" required/>
+								</div>
+								<div class="form-group col-lg-12">
+									<label> Domicilio Pachuca </label>
+									<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca calle, número exterior y colonia" required/>
+								</div>
+								<div class="form-group col-lg-6">
+									<label> Teléfono Pachuca </label>
+									<input type="tel" class="form-control" maxlength="13" minlength="0" placeholder="Introduzca lada + número" required/>
+								</div>
+								<div class="form-group col-lg-6">
+									<label> Fax </label>
+									<input type="tel" class="form-control" maxlength="13" minlength="0" placeholder="Introduzca lada + número" required/>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
 
+				<form role="form">
 
-			<!--DATOS LEGALES-->
-			<div class="tab-pane fade" id="tab4">
-				<div class="row">
-					<div class="col-lg-offset-3">
-						<div class="col-lg-8 legal">
-							<div class="form-group col-lg-12">
-								<label> Lugar de Nacimiento </label>
-								<input type="" name=" " class="form-control" id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-6">
-								<label> No. Acta de Nacimiento </label>
-								<input type="" name="" class="form-control" id="" value="">
-							</div>
-							<div class="form-group col-lg-6">
-								<label> Fecha de Nacimiento </label>
-								<input type="date" name="" class="form-control" id="" value="" placeholder=" ">
-							</div>
-							<div class="form-group col-lg-6">
-								<label>No. INFONAVIT </label>
-								<input type="" name="" class="form-control" id="" value="">
-							</div>
-							<div class="form-group col-lg-6">
-								<label>No. IMSS</label>
-								<input type="" name="" class="form-control" id="" value="">
+					<!--DATOS LEGALES-->
+					<div class="tab-pane fade" id="tab4">
+						<div class="row">
+							<div class="col-lg-offset-3">
+								<div class="col-lg-8 legal">
+									<div class="form-group col-lg-12">
+										<label> Lugar de Nacimiento </label>
+										<input type="text" class="form-control" maxlength="50" minlength="10" placeholder="Indique el municipio y estado de su nacimiento" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label> No. Acta de Nacimiento </label>
+										<input type="text" class="form-control" maxlength="20" minlength="20" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label> Fecha de Nacimiento </label>
+										<input type="date" class="form-control" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label>No. INFONAVIT </label>
+										<input type="text" class="form-control" maxlength="11" minlength="0" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label>No. IMSS</label>
+										<input type="text" class="form-control" maxlength="11" minlength="0" placeholder="Indique el NSS" required/>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
 
 
+					<form role="form">
+						<!--DATOS FISCALES-->
 
-			<!--DATOS FISCALES-->
+						<div class="tab-pane fade" id="tab5">
+							<div class="row">
+								<div class="col-lg-offset-3">
+									<div class="col-lg-8 fiscal">
+										<div class="form-group col-lg-12">
+											<label> Nombre del Apoderado Legal </label>
+											<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>
+										</div>
+										<div class="form-group col-lg-6">
+											<label> R.F.C. </label>
+											<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Introduzca 13 digitos" required/>
+										</div>
+										<div class="form-group col-lg-6">
+											<label> No. de Acta que otorga el Poder </label>
+											<input type="text" class="form-control" maxlength="10" minlength="0" required/>
+										</div>
+										<div class="form-group col-lg-12">
+											<label> Nombre del Responsable Técnico </label>
+											<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>
+										</div>
+										<div class="form-group col-lg-12">
+											<label>No. de Cédula Profesional</label>
+											<input type="text" class="form-control" maxlength="7" minlength="7" placeholder="Escriba 7 digitos" required/>
+										</div>
 
-			<div class="tab-pane fade" id="tab5">
-				<div class="row">
-					<div class="col-lg-offset-3">
-						<div class="col-lg-8 fiscal">
-							<div class="form-group col-lg-12">
-								<label> Nombre del Apoderado Legal </label>
-								<input type="" name="" class="form-control" id="" value="">
+										<h4><strong>De los Bienes y Servicios </strong></h4>
+										<div class="form-group">
+											<label> Bienes / Servicios que solicita, le sean autorizados para proveer al Gobierno del Estado de Hidalgo: </label>
+											<textarea class="form-control" rows="5" cols="80" maxlength="200" placeholder="" required>
+											</textarea>
+										</div>
+										<div class="form-group">
+											<label> Observaciones y Aclaraciones </label>
+											<textarea class="form-control" rows="5" cols="80" maxlength="200" placeholder="" required>
+											</textarea>
+											<p></p>
+										</div>
+									</div>
+								</div>
 							</div>
-							<div class="form-group col-lg-6">
-								<label> R.F.C. </label>
-								<input type="" name="" class="form-control" id="" value="" placeholder="RULA-760606-D98">
-							</div>
-							<div class="form-group col-lg-6">
-								<label> No. de Acta que otorga el Poder </label>
-								<input type="" name="" class="form-control" id="" value="">
-							</div>
-							<div class="form-group col-lg-12">
-								<label> Nombre del Responsable Técnico </label>
-								<input type="" name="" class="form-control" id="" value="" placeholder="Nombre y apellidos">
-							</div>
-							<div class="form-group col-lg-12">
-								<label>No. de Cédula Profesional</label>
-								<input type="" name="" class="form-control" id="" value="">
-							</div>
-
-							<h4><strong>De los Bienes y Servicios </strong></h4>
-							<p> Bienes / Servicios que solicita, le sean autorizados para proveer al Gobierno del Estado de Hidalgo. </p>
-							<textarea class="form-control" rows="5">
-							</textarea>
-							<p> Observaciones y Aclaraciones </p>
-							<textarea class="form-control" rows="4"></textarea>
-							<p> </p>
-
 						</div>
-					</div>
-				</div>
-			</div>
+
+						<!-- Y PARA EL BOTON Y EL PIE -->
+						<button type="submit" class="btn btn-ttc center-block"> Guardar datos </button>
+						<p class="pie "></p>
+						<div class="centrardiv"><img src="img/Pie.jpg" alt="" />
+						</div>
+
+						<script src="js/jquery-2.1.4.min.js "></script>
+						<script src="js/bootstrap.min.js "></script>
+
+
+					</form>
+				</form>
+		</form>
 		</div>
-	</div>
-
-	<p class="pie"></p>
-	<div class="centrardiv"><img src="img/Pie.jpg" alt="" />
-	</div>
-
-	<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js"></script>-->
-	<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-
 </body>
 
 </html>

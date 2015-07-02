@@ -51,200 +51,246 @@
 					<div class="col-lg-offset-3">
 						<div class="col-lg-8 general">
 							<div class="form-group col-lg-12">
-								<label for="nombre" class="control-label">Persona Moral </label>
-								<input type="text" class="form-control" placeholder="Denominación o Razón Social" required="">
+								<label> Persona Moral </label>
+								<input type="text" class="form-control" maxlength="40" minlength="10" placeholder="Escriba la denominación o Razón Social" required/>
 							</div>
 							<div class="form-group col-lg-6">
-								<label for="rfc" class="control-label">R.F.C. </label>
-								<input type="text" class="form-control" placeholder="R.F.C" required="">
-								<!--<span class="help-block">Escriba 13 digitos respecto a su Registro Federal de Contribuyentes</span>
-								<span class="glyphicon glyphicon-OK"></span>-->
+								<label>R.F.C. </label>
+								<input type="text" class="form-control" maxlength="13" minlengty="0" placeholder="Indique 13 digitos" required/>
 							</div>
-							<div class="form-group col-lg-6 ">
+							<div class="form-group col-lg-6">
 								<label>E-mail </label>
-								<input type="email" class="form-control" placeholder="correo@ejemplo.com" required=" ">
+								<input type="email" class="form-control" maxlength="50" minlengt="10" placeholder="alguien@ejemplo.com" required/>
 							</div>
-							<div class="form-group col-lg-12 ">
+							<div class="form-group col-lg-12">
 								<label>Domicilio Fiscal</label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
+								<input type="text" class="form-control" maxlength="50" minlength="20" placeholder="Indique calle, numero exterior y colonia" required/>
 							</div>
-							<div class="form-group col-lg-6 ">
+							<div class="form-group col-lg-6">
 								<label>Ciudad</label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
+								<input type="date" class="form-control" placeholder="dd/mm/yy" required/>
 							</div>
-							<div class="form-group col-lg-6 ">
+							<div class="form-group col-lg-6">
 								<label> Estado </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
+								<select class="form-control" name="estado">
+									<option value="Seleccione"> Seleccione el Estado </option>
+									<option value="Aguascalientes"> Aguascalientes </option>
+									<option value="Bajacalifornia"> Baja California </option>
+									<option value="Bajacaliforniasur"> Baja Californa Sur </option>
+									<option value="Campeche"> Campeche </option>
+									<option value="Chiapas"> Chiapas </option>
+									<option value="Chihuahua"> Chihuahua </option>
+									<option value="Coahuila"> Coahuila </option>
+									<option value="Colima"> Colima </option>
+									<option value="Distritofederal"> Distrito Federal </option>
+									<option value="Durango"> Durango </option>
+									<option value="Estadodemexico"> Estado de México </option>
+									<option value="Guanajuato"> Guanajuato </option>
+									<option value="Guerrero"> Guerrero </option>
+									<option value="Hidalgo"> Hidalgo </option>
+									<option value="Jalisco"> Jalisco </option>
+									<option value="Michoacan"> Michoacan </option>
+									<option value="Morelos"> Morelos </option>
+									<option value="Nayarit"> Nayarit </option>
+									<option value="Nuevoleon"> Nuevo León </option>
+									<option value="Oaxaca"> Oaxaca </option>
+									<option value="Puebla"> Puebla </option>
+									<option value="Queretaro"> Queretaro </option>
+									<option value="Quintanaroo"> Quintana Roo </option>
+									<option value="Sanluispotosi"> San Luis Potosi </option>
+									<option value="Sinaloa"> Sinaloa </option>
+									<option value="Sonora"> Sonora </option>
+									<option value="Tabasco"> Tabasco </option>
+									<option value="Tamaulipas"> Tamaulipas </option>
+									<option value="Tlaxcala"> Tlaxcala </option>
+									<option value="Veracruz"> Veracruz </option>
+									<option value="Yucatan"> Yucatán </option>
+									<option value="Zacatecas"> Zacatecas </option>
+								</select>
 							</div>
-							<div class="form-group col-lg-6 ">
+							<div class="form-group col-lg-6">
 								<label> C.P. </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
+								<input type="number" class="form-control" maxlength="5" minlength="5" placeholder="Indique los 5 digitos" required/>>
 							</div>
-							<div class="form-group col-lg-6 ">
+							<div class="form-group col-lg-6">
 								<label> Teléfono </label>
-								<input type=" " name=" " class="form-control " id=" " value=" " placeholder="(999)999-99-99 ">
+								<input type="tel" class="form-control" maxlength="13" minlength="0" placeholder="Indique lada * numero" required/>
 							</div>
-							<div class="form-group col-lg-12 ">
+							<div class="form-group col-lg-12">
 								<label> Domicilio Pachuca </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
+								<input type="type" class="form-control" maxlength="40" minlength="20" placeholder="Indique calle, número exterior,colonia" required/>
 							</div>
-							<div class="form-group col-lg-6 ">
+							<div class="form-group col-lg-6">
 								<label> Teléfono </label>
-								<input type=" " name=" " class="form-control " id=" " value=" " placeholder="(999)999-99-99 ">
+								<input type="tel" class="form-control " maxlength="40" minlength="20" placeholder="alguien@ejemplo.com" required/>
+
 							</div>
-							<div class="form-group col-lg-6 ">
+							<div class="form-group col-lg-6">
 								<label> Fax </label>
-								<input type=" " name=" " class="form-control " id=" " value=" " placeholder="(999)999-99-99 ">
+								<input type="tel" class="form-control" maxlength="40" minlength="10" placeholder="Indique lada + n" required/>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<button type="submit " class="btn btn-default ">CONTINUAR</button>
 
-			<!-- DATOS FISCALES -->
 
-			<div class="tab-pane fade " id="tab2 ">
-				<div class="row ">
-					<div class="col-lg-offset-3 ">
-						<div class="col-lg-8 fiscales ">
-							<div class="form-group col-lg-12 ">
-								<label> Nombre Representante Legal </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-6 ">
-								<label> R.F.C. </label>
-								<input type=" " name=" " class="form-control " id=" " value=" " placeholder="RULA-760605-M65 ">
-							</div>
-							<div class="form-group col-lg-6 ">
-								<label> Capital Social </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-12 ">
-								<label> No. Acta Constitutiva </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-12 ">
-								<label> Fecha de Acta Constitutiva </label>
-								<input type="date " name=" " class="form-control " id=" " value=" " placeholder=" ">
-							</div>
-							<div class="form-group col-lg-12 ">
-								<label>No. Acta que otorga el poder </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-6 ">
-								<label>No. INFONAVIT </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-6 ">
-								<label>No. IMSS</label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--DATOS NOTARIALES-->
+			<form role="form">
 
-			<div class="tab-pane fade " id="tab3 ">
-				<div class="row ">
-					<div class="col-lg-offset-3 ">
-						<div class="col-lg-8 notariales ">
-							<div class="form-group col-lg-12 ">
-								<label> Nombre Notario </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-6 ">
-								<label> No. Notario </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-6 ">
-								<label> Distrito Judicial </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<h4><strong> Reformas al Acta Constitutiva </strong></h4>
-							<div class="form-group col-lg-12 ">
-								<label> No. Acta Constitutiva </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-12 ">
-								<label> Fecha de Reformas al Acta Constitutiva </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-12 ">
-								<label>Nombre del Notario de Reformas </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-6 ">
-								<label>No. de Notario de Reformas</label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-6 ">
-								<label>Distrito Judicial de Reformas</label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
+				<!-- DATOS FISCALES -->
+
+				<div class="tab-pane fade" id="tab2">
+					<div class="row">
+						<div class="col-lg-offset-3">
+							<div class="col-lg-8 fiscales">
+								<div class="form-group col-lg-12">
+									<label> Nombre Representante Legal </label>
+									<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Indique nombre y apelliss" required/>
+								</div>
+								<div class="form-group col-lg-6">
+									<label> R.F.C. </label>
+									<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Indique los 13trece digitos" required/>
+								</div>
+								<div class="form-group col-lg-6">
+									<label> Capital Social </label>
+									<input type="number" class="form-control" maxlength="4" minlength="0" placeholder="Indique la cantidad" required/>>
+								</div>
+								<div class="form-group col-lg-12">
+									<label> No. Acta Constitutiva </label>
+									<input type="text" class="form-control" maxlength="10" minlength="100" placeholder="alguien@ejemplo.com" required/>
+								</div>
+								<div class="form-group col-lg-12">
+									<label> Fecha de Acta Constitutiva </label>
+									<input type="date" class="form-control" placeholder="dd/mm/yyyy" required/>
+								</div>
+								<div class="form-group col-lg-12">
+									<label>No. Acta que otorga el poder </label>
+									<input type="text" class="form-control" maxlength="10" minlength="0" placeholder="" required/>>
+								</div>
+								<div class="form-group col-lg-6">
+									<label>No. INFONAVIT </label>
+									<input type="number" class="form-control" maxlength="10" minlength="0" placeholder="" required/>
+								</div>
+								<div class="form-group col-lg-6">
+									<label>No. IMSS</label>
+									<input type="number" class="form-control" maxlength="10" minlength="0" placeholder="Indique su NSS" required/>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<!--DATOS SOCIOS / ACCIONISTAS / BIENES / OBSERVACIONES-->
-			<div class="tab-pane fade " id="tab4 ">
-				<div class="row ">
-					<div class="col-lg-offset-3 ">
-						<div class="col-lg-8 accionista ">
-							<div class="form-group col-lg-8 ">
-								<label> Nombre Socio (1) </label>
-								<input type=" " name=" " class="form-control " id=" " value=" " placeholder="Nombre y apellidos ">
+
+				<form role="form">
+
+					<!--DATOS NOTARIALES-->
+
+					<div class="tab-pane fade" id="tab3">
+						<div class="row">
+							<div class="col-lg-offset-3">
+								<div class="col-lg-8 notariales">
+									<div class="form-group col-lg-12 ">
+										<label> Nombre Notario </label>
+										<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Indique nombre y apellidos" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label> No. Notario </label>
+										<input type="text" class="form-control" maxlength="10" minlength="0" placeholder="" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label> Distrito Judicial </label>
+										<input type="text" class="form-control" maxlength="40" minlength="10" placeholder="Indique el Distrito" required/>
+									</div>
+									<h4><strong> Reformas al Acta Constitutiva </strong></h4>
+									<div class="form-group col-lg-12">
+										<label> No. Acta Constitutiva </label>
+										<input type="text" class="form-control" maxlength="10" minlength="0" placeholder="" required/>
+									</div>
+									<div class="form-group col-lg-12">
+										<label> Fecha de Reformas al Acta Constitutiva </label>
+										<input type="date" class="form-control" placeholder="dd/mm/yyyy" required/>
+									</div>
+									<div class="form-group col-lg-12">
+										<label>Nombre del Notario de Reformas </label>
+										<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Indique nombre y apellidos" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label>No. de Notario de Reformas</label>
+										<input type="text" class="form-control" maxlength="10" minlength="0" placeholder="" required/>
+									</div>
+									<div class="form-group col-lg-6">
+										<label>Distrito Judicial de Reformas</label>
+										<input type="text" class="form-control" maxlength="40" minlength="10" placeholder="Indique el Distrito" required/>
+									</div>
+								</div>
 							</div>
-							<div class="form-group col-lg-4 ">
-								<label> R.F.C. </label>
-								<input type=" " name=" " class="form-control " id=" " value=" " placeholder="RULA-760605-M65 ">
-							</div>
-							<div class="form-group col-lg-8 ">
-								<label> Nombre Socio (2) </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-4 ">
-								<label> R.F.C. </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-8 ">
-								<label> Nombre Socio (3) </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-4 ">
-								<label> R.F.C. </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-8 ">
-								<label> Nombre Socio (4) </label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<div class="form-group col-lg-4 ">
-								<label>R.F.C.</label>
-								<input type=" " name=" " class="form-control " id=" " value=" ">
-							</div>
-							<h4> <strong>De los Bienes y Servicios </strong> </h4>
-							<p> Bienes / Servicios que solicita, le sean autorizados para proveer al Gobierno del Estado de Hidalgo. </p>
-							<textarea class="form-control " rows="5 ">
-							</textarea>
-							<p> Observaciones y Aclaraciones </p>
-							<textarea class="form-control " rows="4 ">
-							</textarea>
-							<p> </p>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<p class="pie "></p>
-	<div class="centrardiv "><img src="img/Pie.jpg " alt=" " />
-	</div>
-	<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js "></script>
+
+					<form role="form">
+
+						<!--DATOS SOCIOS / ACCIONISTAS / BIENES / OBSERVACIONES-->
+						<div class="tab-pane fade" id="tab4">
+							<div class="row">
+								<div class="col-lg-offset-3">
+									<div class="col-lg-8 accionista">
+										<div class="form-group col-lg-8">
+											<label> Nombre Socio (1) </label>
+											<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Indique nombre y apellidos" required/>
+										</div>
+										<div class="form-group col-lg-4">
+											<label> R.F.C. </label>
+											<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Indique 13 digitos" required/>
+										</div>
+										<div class="form-group col-lg-8">
+											<label> Nombre Socio (2) </label>
+											<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Indique nombre y apellidos" required/>
+										</div>
+										<div class="form-group col-lg-4">
+											<label> R.F.C. </label>
+											<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Indique 13 digitos" required/>
+										</div>
+										<div class="form-group col-lg-8">
+											<label> Nombre Socio (3) </label>
+											<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Indique nombre y apellidos" required/>
+										</div>
+										<div class="form-group col-lg-4">
+											<label> R.F.C. </label>
+											<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Indique 13 digitos" required/>
+										</div>
+										<div class="form-group col-lg-8">
+											<label> Nombre Socio (4) </label>
+											<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Indique nombre y apellidos" required/>
+										</div>
+										<div class="form-group col-lg-4">
+											<label>R.F.C.</label>
+											<input type="text" class="form-control" maxlength="13" minlength="0" placeholder="Indique 13 digitos" required/>
+										</div>
+										<h4> <strong>De los Bienes y Servicios </strong> </h4>
+										<p> Bienes / Servicios que solicita, le sean autorizados para proveer al Gobierno del Estado de Hidalgo. </p>
+										<textarea class="form-control" rows="5">
+										</textarea>
+										<p> Observaciones y Aclaraciones </p>
+										<textarea class="form-control" rows="4">
+										</textarea>
+										<p> </p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+						<!-- Y PARA EL BOTON Y EL PIE -->
+						<button type="submit" class="btn btn-ttc center-block"> Guardar datos </button>
+						<p class="pie"></p>
+						<div class="centrardiv"><img src="img/Pie.jpg" alt=" " />
+						</div>
+						<!--<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js "></script>
 		<script src="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.0-rc2/js/bootstrap.min.js "></script>-->
-	<script src="js/jquery-2.1.4.min.js "></script>
-	<script src="js/bootstrap.min.js "></script>
+						<script src="js/jquery-2.1.4.min.js"></script>
+						<script src="js/bootstrap.min.js"></script>
+					</form>
+
 
 </body>
 
