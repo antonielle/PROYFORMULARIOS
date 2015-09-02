@@ -1,0 +1,23 @@
+<style>
+/* Popover */
+  .popover {
+      border: 2px dotted gray;
+  }
+  /* Popover Header */
+  .popover-title {
+      background-color: #ff920a; 
+      color: #FFFFFF; 
+      font-size: 28px;
+      text-align:center;
+  }
+  /* Popover Body */
+  .popover-content {
+      background-color:darkorange;
+      color: #FFFFFF;
+      padding: 25px;
+  }
+  /* Popover Arrow */
+  .arrow {
+      border-right-color: gray !important;
+  }
+  </style>
