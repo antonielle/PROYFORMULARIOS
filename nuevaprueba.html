@@ -19,6 +19,8 @@
     <link href="css/popover.css" rel="stylesheet">
 	<script src="css/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/strings.js"></script>
+   
  
 
 </head>
@@ -62,106 +64,100 @@
 							<div class="col-lg-8 general">
 								<div class="form-group col-lg-12">
 									<label> Persona Física </label>
-									<input type="text" class="form-control" maxlength="60" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Indique el nombre y apellidos" required> 
-									<!--<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>-->
+									<input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="60" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Escriba nombre y apellidos" required> 
+                        <!-- <input type="text" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+                            <input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>-->
 								</div>
 								<div class="form-group col-lg-6">
 									<label> R.F.C. </label>
-                                    <input type="text" class="form-control" maxlength="13" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Escriba los 13 digitos" required>
+                                    <input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="13" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Escriba los 13 digitos" required>
 									<!--<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Introduzca 13 digitos" required/>-->
 								</div>
 								<div class="form-group col-lg-6">
 									<label>E-mail </label>
-                                    <input type="text" class="form-control" maxlength="40" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="alguien@ejemplo.com" required>
+                                    <input type="email" class="form-control" maxlength="40" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="alguien@ejemplo.com" required>
 									<!--<input type="email" class="form-control" maxlength="40" minlength="20" placeholder="alguien@ejemplo.com" required/>-->
 								</div>
 								<div class="form-group col-lg-12">
 									<label>Domicilio Fiscal</label>
-                                <input type="text" class="form-control" maxlength="50" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Escriba la calle, num. ext y colonia" required>
-
-									<!--<input type="text" class="form-control" maxlength="50" minlength="20" required/>-->
+                                <input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="50" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Escriba la calle, num. ext y colonia" required>
+                                <!--<input type="text" class="form-control" maxlength="50" minlength="20" required/>-->
 								</div>
 								<div class="form-group col-lg-6">
 									<label>Ciudad/ Municipio</label>
-								    <input type="text" class="form-control" maxlength="30" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Escriba la Ciudad o Municipio" required>
-
-                                   <!-- <input type="text" class="form-control" maxlength="30" minlength="7" required/>-->
+								    <input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="30" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Escriba la Ciudad o Municipio" required>
+                                <!-- <input type="text" class="form-control" maxlength="30" minlength="7" required/>-->
 								</div>
 								<div class="form-group col-lg-6">
 									<label> Estado </label>
 									<select class="form-control" name="estado">
-										<option value="Seleccione"> Seleccione...</option>
-										<option value="Aguascalientes"> Aguascalientes </option>
-										<option value="Bajacalifornia"> Baja California </option>
-										<option value="Bajacaliforniasur"> Baja Californa Sur </option>
-										<option value="Campeche"> Campeche </option>
-										<option value="Chiapas"> Chiapas </option>
-										<option value="Chihuahua"> Chihuahua </option>
-										<option value="Coahuila"> Coahuila </option>
-										<option value="Colima"> Colima </option>
-										<option value="Distritofederal"> Distrito Federal </option>
-										<option value="Durango"> Durango </option>
-										<option value="Estadodemexico"> Estado de México </option>
-										<option value="Guanajuato"> Guanajuato </option>
-										<option value="Guerrero"> Guerrero </option>
-										<option value="Hidalgo"> Hidalgo </option>
-										<option value="Jalisco"> Jalisco </option>
-										<option value="Michoacan"> Michoacan </option>
-										<option value="Morelos"> Morelos </option>
-										<option value="Nayarit"> Nayarit </option>
-										<option value="Nuevoleon"> Nuevo León </option>
-										<option value="Oaxaca"> Oaxaca </option>
-										<option value="Puebla"> Puebla </option>
-										<option value="Queretaro"> Queretaro </option>
-										<option value="Quintanaroo"> Quintana Roo </option>
-										<option value="Sanluispotosi"> San Luis Potosi </option>
-										<option value="Sinaloa"> Sinaloa </option>
-										<option value="Sonora"> Sonora </option>
-										<option value="Tabasco"> Tabasco </option>
-										<option value="Tamaulipas"> Tamaulipas </option>
-										<option value="Tlaxcala"> Tlaxcala </option>
-										<option value="Veracruz"> Veracruz </option>
-										<option value="Yucatan"> Yucatán </option>
-										<option value="Zacatecas"> Zacatecas </option>
+										<option value="Seleccione"> SELECCIONE...</option>
+										<option value="Aguascalientes"> AGUASCALIENTES </option>
+										<option value="Bajacalifornia"> BAJA CALIFORNIA </option>
+										<option value="Bajacaliforniasur"> BAJA CALIFORNIA SUR </option>
+										<option value="Campeche"> CAMPECHE </option>
+										<option value="Chiapas"> CHIAPAS </option>
+										<option value="Chihuahua"> CHIHUAHUA </option>
+										<option value="Coahuila"> COAHUILA </option>
+										<option value="Colima"> COLIMA </option>
+										<option value="Distritofederal"> DISTRITO FEDERAL </option>
+										<option value="Durango"> DURANGO </option>
+										<option value="Estadodemexico"> ESTADO DE MÉXICO </option>
+										<option value="Guanajuato"> GUANAJUATO </option>
+										<option value="Guerrero"> GUERRERO </option>
+										<option value="Hidalgo"> HIDALGO </option>
+										<option value="Jalisco"> JALISCO </option>
+										<option value="Michoacan"> MICHOACAN </option>
+										<option value="Morelos"> MORELOS </option>
+										<option value="Nayarit"> NAYARIT </option>
+										<option value="Nuevoleon"> NUEVO LEÓN </option>
+										<option value="Oaxaca"> OAXACA </option>
+										<option value="Puebla"> PUEBLA </option>
+										<option value="Queretaro"> QUERETARO </option>
+										<option value="Quintanaroo"> QUINTANA ROO </option>
+										<option value="Sanluispotosi"> SAN LUIS POTOSI </option>
+										<option value="Sinaloa"> SINALOA </option>
+										<option value="Sonora"> SONORA </option>
+										<option value="Tabasco"> TABASCO </option>
+										<option value="Tamaulipas"> TAMAULIPAS </option>
+										<option value="Tlaxcala"> TLAXCALA </option>
+										<option value="Veracruz"> VERACRUZ </option>
+										<option value="Yucatan"> YUCATÁN </option>
+										<option value="Zacatecas"> ZACATECAS </option>
 									</select>
 									<!--<input type="" name=" " class="form-control " maxlength="40 " minlength="20 " required/>-->
 								</div>
 								<div class="form-group col-lg-6">
 									<label> C.P. </label>
-                                    <input type="text" class="form-control" maxlength="5" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Escriba solo 5 digitos" required>
-
-									<!--<input type="number" class="form-control" maxlength="5" minlength="5" required/>-->
+                                    <input type="text" class="form-control" maxlength="5" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Escriba solo 5 digitos" required>
+                                <!--<input type="number" class="form-control" maxlength="5" minlength="5" required/>-->
 								</div>
 								<div class="form-group col-lg-6">
 									<label> Teléfono </label>
-                                    <input type="text" class="form-control" maxlength="13" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Introduzca lada + número" required>
-
-									<!--<input type="tel" class="form-control" maxlength="13" minlength="0" placeholder="Introduzca lada + numero" required/>-->
+                                    <input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="13" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Introduzca lada + número" required>
+                                    <!--<input type="tel" class="form-control" maxlength="13" minlength="0" placeholder="Introduzca lada + numero" required/>-->
 								</div>
 								<div class="form-group col-lg-12">
 									<label> Domicilio Pachuca </label>
-                                    <input type="text" class="form-control" maxlength="40" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Escriba la calle, num. ext. y la colonia" required>
-
-									<!--<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca calle, número exterior y colonia" required/>-->
+                                    <input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="40" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Escriba la calle, num. ext. y la colonia" required>
+                                 <!--<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca calle, número exterior y colonia" required/>-->
 								</div>
 								<div class="form-group col-lg-6">
 									<label> Teléfono Pachuca </label>
-                                    <input type="text" class="form-control" maxlength="13" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Introduzca lada + número" required>
-
-									<!--<input type="tel" class="form-control" maxlength="13" minlength="0" placeholder="Introduzca lada + número" required/>-->
+                                    <input type="text" class="form-control" maxlength="13" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Introduzca lada + número" required>
+                                <!--<input type="tel" class="form-control" maxlength="13" minlength="0" placeholder="Introduzca lada + número" required/>-->
 								</div>
 								<div class="form-group col-lg-6">
 									<label> Fax </label>
-                                    <input type="text" class="form-control" maxlength="13" data-toggle="popover" data-trigger="hover" data-placement="top" data-content="Introduzca lada + número" required>
-
-									<!--<input type="tel" class="form-control" maxlength="13" minlength="0" placeholder="Introduzca lada + número" required/>-->
+                                    <input type="text" class="form-control" maxlength="13" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Introduzca lada + número" required>
+                                 <!--<input type="tel" class="form-control" maxlength="13" minlength="0" placeholder="Introduzca lada + número" required/>-->
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 
-<!--
+
 				<form role="form">
 
 					<!--DATOS LEGALES-->
@@ -171,23 +167,25 @@
 								<div class="col-lg-8 legal">
 									<div class="form-group col-lg-12">
 										<label> Lugar de Nacimiento </label>
-										<input type="text" class="form-control" maxlength="50" minlength="10" placeholder="Indique el municipio y estado de su nacimiento" required/>
+                                        <input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="50" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Escriba el municipio y estado de su nacimiento" required>
+										<!--<input type="text" class="form-control" maxlength="50" minlength="10" placeholder="Indique el municipio y estado de su nacimiento" required/>-->
 									</div>
 									<div class="form-group col-lg-6">
 										<label> No. Acta de Nacimiento </label>
-										<input type="text" class="form-control" maxlength="20" minlength="20" required/>
+                                        <input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="20" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Escriba el número" required>
+										<!--<input type="text" class="form-control" maxlength="20" minlength="20" required/>-->
 									</div>
 									<div class="form-group col-lg-6">
 										<label> Fecha de Nacimiento </label>
-										<input type="date" class="form-control" required/>
+                                        <input type="date" class="form-control" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Señale la fecha" required/>
 									</div>
 									<div class="form-group col-lg-6">
 										<label>No. INFONAVIT </label>
-										<input type="text" class="form-control" maxlength="11" minlength="0" required/>
-									</div>
+										<input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="20" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Escriba el número" required>
+									</div> 
 									<div class="form-group col-lg-6">
 										<label>No. IMSS</label>
-										<input type="text" class="form-control" maxlength="11" minlength="0" placeholder="Indique el NSS" required/>
+										<input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="20" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Escriba el NSS" required>
 									</div>
 								</div>
 							</div>
@@ -205,42 +203,50 @@
 									<div class="col-lg-8 fiscal">
 										<div class="form-group col-lg-12">
 											<label> Nombre del Apoderado Legal </label>
-											<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>
+                                            <input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="20" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Escriba el nombre y apellidos" required>
+											<!--<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>-->
 										</div>
 										<div class="form-group col-lg-6">
 											<label> R.F.C. </label>
-											<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Introduzca 13 digitos" required/>
+                                            <input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="13" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Escriba los 13 digitos" required>
+										<!--	<input type="text" class="form-control" maxlength="13" minlength="13" placeholder="Introduzca 13 digitos" required/>-->
 										</div>
 										<div class="form-group col-lg-6">
 											<label> No. de Acta que otorga el Poder </label>
-											<input type="text" class="form-control" maxlength="10" minlength="0" required/>
+                                            <input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="10" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Escriba el número del acta" required>
+
+											<!--<input type="text" class="form-control" maxlength="10" minlength="0" required/>-->
 										</div>
 										<div class="form-group col-lg-12">
 											<label> Nombre del Responsable Técnico </label>
-											<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>
+                                            <input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="40" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Escriba el nombre y apellidos" required>
+								      <!--			<input type="text" class="form-control" maxlength="40" minlength="20" placeholder="Introduzca nombre y apellidos" required/>-->
 										</div>
 										<div class="form-group col-lg-12">
 											<label>No. de Cédula Profesional</label>
-											<input type="text" class="form-control" maxlength="7" minlength="7" placeholder="Escriba 7 digitos" required/>
+                                            <input type="text" class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="7" data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Escriba 7 digitos" required>
+										<!--	<input type="text" class="form-control" maxlength="7" minlength="7" placeholder="Escriba 7 digitos" required/>-->
 										</div>
 
 										<h4><strong>De los Bienes y Servicios </strong></h4>
 										<div class="form-group">
 											<label> Bienes / Servicios que solicita, le sean autorizados para proveer al Gobierno del Estado de Hidalgo: </label>
-											<textarea class="form-control" rows="5" cols="80" maxlength="200" placeholder="" required>
-											</textarea>
+                                           <textarea class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="200" rows="5" cols="80"  data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Escriba brevemente sus servicios" required>
+                                              </textarea>
 										</div>
 										<div class="form-group">
 											<label> Observaciones y Aclaraciones </label>
-											<textarea class="form-control" rows="5" cols="80" maxlength="200" placeholder="" required>
-											</textarea>
+                                             <textarea class="form-control" value="" style="text-transform:uppercase;" onkeyup="javascript:this.value=this.value.toUpperCase();" maxlength="200" rows="5" cols="80"  data-toggle="popover" data-trigger="hover" data-placement="left" data-content="Escriba algún comentario" required>
+				                   			</textarea>
 											<p></p>
 										</div>
 									</div>
 								</div>
 							</div>
 						</div>
-            
+                    
+                       
+                      
                           <script>
                                   $(document).ready(function(){
                                   $('[data-toggle="popover"]').popover();   
@@ -252,11 +258,13 @@
 						<p class="pie "></p>
 						<div class="centrardiv"><img src="img/Pie.jpg" alt="" />
 						</div>
-                         
-
-						<script src="js/jquery-2.1.4.min.js "></script>
-						<script src="js/bootstrap.min.js "></script>
+                    </form>
+                </form>
             </div>
+            
+                        <script src="js/jquery-2.1.4.min.js "></script>
+						<script src="js/bootstrap.min.js "></script>
+            
 </body>
 
 </html>
