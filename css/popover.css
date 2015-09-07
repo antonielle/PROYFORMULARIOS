@@ -1,23 +1,28 @@
 <style>
-/* Popover */
+/* Popover 
   .popover {
       border: 2px dotted gray;
-  }
-  /* Popover Header */
-  .popover-title {
-      background-color: #ff920a; 
-      color: #FFFFFF; 
-      font-size: 28px;
-      text-align:center;
+  }*/
+  /* Popover */
+  .popover-content1 {
+      -webkit-box-shadow:10px 10px 5px 0px rgba(0,0,0,0.75);
+          -moz-box-shadow:10px 10px 5px 0px rgba(0,0,0,0.75);
+           box-shadow: 10px 10px 50x 0px rgba(0,0,0,0.75);
+           
   }
   /* Popover Body */
   .popover-content {
-      background-color:darkorange;
+      background-color: #ff920a;
       color: #FFFFFF;
-      padding: 25px;
+       border-radius:10px 10px 10px 10px;
+      -moz-border-radius:10px 10px 10px 10px;
+      -webkit-border-radius:10px 10px 10px 10px;
+      border: opx solid #000000;
+      font-size: 20px;
+      text-align:center;     
   }
-  /* Popover Arrow */
+  /* Popover Arrow 
   .arrow {
-      border-right-color: gray !important;
-  }
+      border-right-color: gray !important;padding: 20px;
+  }*/
   </style>
